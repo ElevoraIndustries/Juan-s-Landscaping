@@ -184,7 +184,7 @@ h1 em, h2 em { font-style: normal; color: var(--lime); }
 
 /* Homepage feature photograph, separate from the About page image */
 .home-story-image {
-  background-image: url("../images/homepage-garden.jpg");
+  background-image: url("../images/test1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
