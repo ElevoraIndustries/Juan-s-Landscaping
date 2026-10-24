@@ -21,43 +21,11 @@ button, input, select, textarea { font: inherit; }
 .topbar a { font-weight: 700; color: var(--lime); }
 .site-header { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.96); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(226,232,223,.85); }
 .nav-wrap { display: flex; justify-content: space-between; align-items: center; min-height: 82px; gap: 24px; }
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  color: var(--forest);
-  flex-shrink: 0;
-}
-.brand-mark {
-  display: grid;
-  place-items: center;
-  width: 36px;
-  height: 36px;
-  flex: 0 0 36px;
-  border-radius: 50%;
-  color: var(--white);
-  background: var(--green);
-  font-size: 23px;
-  line-height: 1;
-}
-.brand-text {
-  display: flex;
-  min-width: 0;
-  line-height: 1.1;
-}
-.brand-text strong {
-  font-family: "Manrope", sans-serif;
-  font-size: clamp(13px, 1.3vw, 17px);
-  font-weight: 800;
-  letter-spacing: 0.015em;
-  white-space: nowrap;
-}
-.brand-text small {
-  margin-top: 0;
-  font-size: 9px;
-  letter-spacing: .08em;
-  font-weight: 700;
-}
+.brand { display: inline-flex; align-items: center; gap: 11px; color: var(--forest); }
+.brand-mark { display: grid; place-items: center; width: 43px; height: 43px; border-radius: 50%; color: var(--white); background: var(--green); font-size: 28px; line-height: 1; }
+.brand-text { display: flex; flex-direction: column; line-height: 1.15; }
+.brand-text strong { font: 800 22px/1 "Manrope", sans-serif; letter-spacing: .04em; }
+.brand-text small { margin-top: 6px; font-size: 9px; letter-spacing: .13em; font-weight: 700; }
 .main-nav { display: flex; align-items: center; gap: 34px; font-size: 13px; font-weight: 700; }
 .main-nav > a:not(.nav-cta) { transition: color .2s; }
 .main-nav > a:not(.nav-cta):hover { color: var(--green); }
@@ -180,17 +148,9 @@ h1 em, h2 em { font-style: normal; color: var(--lime); }
   .footer-main { flex-wrap: wrap; }
 }
 @media (max-width: 520px) {
-  .brand-text strong {
-  font-size: 12px;
-  letter-spacing: 0;
-}
+  .brand-text strong { font-size: 19px; }
   .brand-text small { font-size: 8px; }
-  .brand-mark {
-  width: 30px;
-  height: 30px;
-  flex-basis: 30px;
-  font-size: 20px;
-}
+  .brand-mark { width: 38px; height: 38px; font-size: 25px; }
   .hero { min-height: 650px; }
   .hero h1 { font-size: clamp(42px, 12vw, 58px); }
   .hero-copy { font-size: 14px; }
@@ -220,3 +180,11 @@ h1 em, h2 em { font-style: normal; color: var(--lime); }
 .about-page-section { margin-top: 0; }
 .page-contact { padding-top: 75px; }
 @media (max-width: 760px) { .page-hero { padding: 56px 0; } }
+
+
+/* Homepage feature photograph, separate from the About page image */
+.home-story-image {
+  background-image: url("https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1400&q=85");
+  background-position: center;
+  background-size: cover;
+}
