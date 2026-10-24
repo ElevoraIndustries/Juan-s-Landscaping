@@ -184,7 +184,8 @@ h1 em, h2 em { font-style: normal; color: var(--lime); }
 
 /* Homepage feature photograph, separate from the About page image */
 .home-story-image {
-  background-image: url("https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1400&q=85");
+  background-image: url("../images/homepage-garden.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
